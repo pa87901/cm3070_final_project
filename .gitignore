@@ -2,3 +2,5 @@
 *.apk
 chemlabbuild_BurstDebugInformation_DoNotShip/
 chemlabproto_BurstDebugInformation_DoNotShip/
+UserSettings/
+Library/
