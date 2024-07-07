@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 
 [System.Serializable]
 [StructLayout(LayoutKind.Sequential, Size=44)]
-public struct Particle{
+public struct Particle {
     public float pressure; // 4
     public float density; // 8
     public Vector3 currentForce; //20
