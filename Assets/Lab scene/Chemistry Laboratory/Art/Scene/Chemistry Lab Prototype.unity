@@ -181,7 +181,7 @@ PrefabInstance:
     - target: {fileID: 1044230619016210068, guid: 1836ec5a4a9706d42b8941d84940196f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.7
+      value: -0.72
       objectReference: {fileID: 0}
     - target: {fileID: 1044230619016210068, guid: 1836ec5a4a9706d42b8941d84940196f,
         type: 3}
@@ -1145,6 +1145,42 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 309309510}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &403798565 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6555366191670972136, guid: 334977a5bb7cd43988a44c946bddc4fa,
+    type: 3}
+  m_PrefabInstance: {fileID: 1383809780}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &403798566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403798565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a789ca5f620a84b67ba56dd816828c17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionSphere: {fileID: 0}
+  showSpheres: 1
+  numToSpawn: {x: 10, y: 10, z: 10}
+  boxSize: {x: -0.08, y: 0.12, z: 0.07}
+  spawnCenter: {x: -0.003, y: -0.7, z: 0.071}
+  particleRadius: 0.1
+  spawnJitter: 0.2
+  particleMesh: {fileID: 0}
+  particleRenderSize: 8
+  material: {fileID: 0}
+  shader: {fileID: 0}
+  particles: []
+  boundDamping: -0.3
+  viscosity: -0.003
+  particleMass: 1
+  gasConstant: 2
+  restingDensity: 1
+  timestep: 0.007
 --- !u!1001 &517006737
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1246,14 +1282,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 694839788}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.029, z: 0}
+  m_LocalRotation: {x: 0.22062069, y: -0, z: -0, w: 0.9753597}
+  m_LocalPosition: {x: 0, y: 0.07000005, z: 0.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1454020927}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 25.491, y: 0, z: 0}
 --- !u!114 &694839790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2892,17 +2928,17 @@ PrefabInstance:
     - target: {fileID: 6555366191670972142, guid: 334977a5bb7cd43988a44c946bddc4fa,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.003
       objectReference: {fileID: 0}
     - target: {fileID: 6555366191670972142, guid: 334977a5bb7cd43988a44c946bddc4fa,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.658
       objectReference: {fileID: 0}
     - target: {fileID: 6555366191670972142, guid: 334977a5bb7cd43988a44c946bddc4fa,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.071
       objectReference: {fileID: 0}
     - target: {fileID: 6555366191670972142, guid: 334977a5bb7cd43988a44c946bddc4fa,
         type: 3}
@@ -2960,7 +2996,8 @@ PrefabInstance:
       propertyPath: spawnCenter.y
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6101870537026299490, guid: 334977a5bb7cd43988a44c946bddc4fa, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 334977a5bb7cd43988a44c946bddc4fa, type: 3}
 --- !u!1 &1397479992
 GameObject:
