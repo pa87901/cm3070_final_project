@@ -31,7 +31,7 @@ public class SPH : MonoBehaviour
     }
     public Vector3 boxSize = new Vector3(4, 10, 3); // Size of the container for the particles to be bound within.
     public Vector3 spawnCenter; // The starting point where the particles will spawn from.
-    public float particleRadius = 0.1f;
+    public float particleRadius = 0.01f;
     public float spawnJitter = 0.2f;
 
     // These are specifically for rendering the GPU instance spheres.
