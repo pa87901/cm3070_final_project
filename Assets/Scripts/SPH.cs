@@ -57,8 +57,8 @@ public class SPH : MonoBehaviour
     private ComputeBuffer _argsBuffer; // Arguments list for the GPU instance spheres.
     public ComputeBuffer _particlesBuffer; // Contains all the particles in the simulation.
     private int integrateKernel; // For integrate function to reuse it throughout our script.
-    private int computeForceKernel;
-    private int densityPressureKernel;
+    private int computeForceKernel; // Add in from the SPHCompute compute script.
+    private int densityPressureKernel; // Add in from the SPHCompute compute script.
 
     // Set up all the variables for the Compute Shader.
     private void SetupComputeBuffers() {
@@ -111,6 +111,7 @@ public class SPH : MonoBehaviour
         _particlesBuffer = new ComputeBuffer(totalParticles, 44);
         _particlesBuffer.SetData(particles);
 
+        // Call the SetupComputeBuffers method.
         SetupComputeBuffers();
     }
 
@@ -120,10 +121,11 @@ public class SPH : MonoBehaviour
         shader.SetVector("spherePos", collisionSphere.transform.position);
         shader.SetFloat("sphereRadius", collisionSphere.transform.localScale.x / 2);
 
+        
         // Total Particles has to be divisible by 100, because we are using 100 threads in the SPHCompute.compute shader script to ensure the function runs once per particle.
-        shader.Dispatch(densityPressureKernel, totalParticles / 100, 1, 1);
-        shader.Dispatch(computeForceKernel, totalParticles / 100, 1, 1);
-        shader.Dispatch(integrateKernel, totalParticles / 100, 1, 1);
+        shader.Dispatch(densityPressureKernel, totalParticles / 100, 1, 1); // Dispatch the densityPressure function.
+        shader.Dispatch(computeForceKernel, totalParticles / 100, 1, 1); // Dispatch the computeForce function.
+        shader.Dispatch(integrateKernel, totalParticles / 100, 1, 1); // Dispatch the integrate function.
     }
 
     // Method for spawning the particles.
@@ -164,7 +166,7 @@ public class SPH : MonoBehaviour
 
         if (!Application.isPlaying) {
             Gizmos.color = Color.cyan;
-            Gizmos.DrawWireSphere(spawnCenter, 0.1f);
+            Gizmos.DrawWireSphere(spawnCenter, 0.002f);
         }
     }
 
@@ -191,5 +193,7 @@ public class SPH : MonoBehaviour
                 castShadows: UnityEngine.Rendering.ShadowCastingMode.Off
             );
         }
+
+        Debug.Log(particles[1].velocity);
     }
 }
