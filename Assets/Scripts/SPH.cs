@@ -33,6 +33,7 @@ public class SPH : MonoBehaviour
     public Vector3 spawnCenter; // The starting point where the particles will spawn from.
     public float particleRadius = 0.01f;
     public float spawnJitter = 0.2f;
+    public float gizmoSphereRadius = 0.05f;
 
     // These are specifically for rendering the GPU instance spheres.
     [Header("Particle Rendering")]
@@ -130,7 +131,9 @@ public class SPH : MonoBehaviour
 
     // Method for spawning the particles.
     private void SpawnParticlesInBox() {
-        Vector3 spawnPoint  = spawnCenter;
+        // Vector3 spawnPoint  = spawnCenter;
+        Vector3 spawnPoint = transform.position + new Vector3(0, 500, 0);
+        Debug.Log(transform.position.y);
         List<Particle> _particles = new List<Particle>();
 
         // Spawn particles in a grid structure.
@@ -166,7 +169,11 @@ public class SPH : MonoBehaviour
 
         if (!Application.isPlaying) {
             Gizmos.color = Color.cyan;
-            Gizmos.DrawWireSphere(spawnCenter, 0.002f);
+            Gizmos.DrawWireSphere(
+                // spawnCenter,
+                transform.position + new Vector3(0, boxSize.y * 2 / 5, 0),
+                gizmoSphereRadius
+            );
         }
     }
 
@@ -194,6 +201,6 @@ public class SPH : MonoBehaviour
             );
         }
 
-        Debug.Log(particles[1].velocity);
+        // Debug.Log(particles[1].velocity);
     }
 }

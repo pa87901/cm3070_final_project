@@ -1160,15 +1160,16 @@ MonoBehaviour:
   collisionSphere: {fileID: 1047373673}
   showSpheres: 1
   numToSpawn: {x: 10, y: 10, z: 10}
-  boxSize: {x: 0.06, y: 0.12, z: 0.06}
-  spawnCenter: {x: -0.095, y: 1.39, z: -0.14}
-  particleRadius: 0.002
-  spawnJitter: 0.004
+  boxSize: {x: 0.5, y: 1, z: 0.5}
+  spawnCenter: {x: 0.13, y: 8.79, z: -0.33}
+  particleRadius: 0.03
+  spawnJitter: 0.03
+  gizmoSphereRadius: 0.05
   particleMesh: {fileID: 2540817853737639666, guid: d2bcb9b63a067d643b56910fd449b51b,
     type: 3}
-  particleRenderSize: 1
-  material: {fileID: 2100000, guid: 6b3eb5ee8395c484cb24c4e105a4d426, type: 2}
-  shader: {fileID: 7200000, guid: c5fbb7e9e7da549e887bc21ea8e06f34, type: 3}
+  particleRenderSize: 0.2
+  material: {fileID: 2100000, guid: 46f4b02bb10bc4f59a4108bfca3f5612, type: 2}
+  shader: {fileID: 7200000, guid: be65b6707ee57ca4683e0fe2fa13303c, type: 3}
   particles: []
   boundDamping: -0.3
   viscosity: -0.003
@@ -2899,7 +2900,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 26.991467
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -3200,12 +3201,12 @@ PrefabInstance:
     - target: {fileID: 6555366191670972142, guid: 334977a5bb7cd43988a44c946bddc4fa,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.062000036
+      value: 1.24
       objectReference: {fileID: 0}
     - target: {fileID: 6555366191670972142, guid: 334977a5bb7cd43988a44c946bddc4fa,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.13
       objectReference: {fileID: 0}
     - target: {fileID: 6555366191670972142, guid: 334977a5bb7cd43988a44c946bddc4fa,
         type: 3}
