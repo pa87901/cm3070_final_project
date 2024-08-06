@@ -132,8 +132,8 @@ public class SPH : MonoBehaviour
     // Method for spawning the particles.
     private void SpawnParticlesInBox() {
         // Vector3 spawnPoint  = spawnCenter;
-        Vector3 spawnPoint = transform.position + new Vector3(0, 500, 0);
-        Debug.Log(transform.position.y);
+        Vector3 spawnPoint = transform.position + new Vector3(0, 0, 0);
+        // Debug.Log(transform.position.y);
         List<Particle> _particles = new List<Particle>();
 
         // Spawn particles in a grid structure.
@@ -154,6 +154,7 @@ public class SPH : MonoBehaviour
                 }
             }
         }
+        Debug.Log(boxSize / 2);
 
         particles = _particles.ToArray();
     }
