@@ -27,7 +27,8 @@ float radius5; // Radius to power 5.
 float pi;
 int particleLength;
 float timestep;
-float3 boxSize;
+// float3 boxSize;
+float4 boxSize;
 float3 spherePos;
 float sphereRadius;
 
@@ -41,8 +42,9 @@ void Integrate (uint3 id: SV_DISPATCHTHREADID) {
 
     // Keep the particles in the confines of the simulator container.
     // When particles hit the boundary, the velocity is updated to send it back inside the container wall.
-    float3 topRight = boxSize / 2 * 4;
-    float3 bottomLeft = -boxSize / 2 * 4;
+    // vector addition = new float3(0, 2, 0);
+    float4 topRight = (boxSize / 2);
+    float4 bottomLeft = -(boxSize / 2) ;
     // float3 topRight = _particles[id.x].position;
     // float3 bottomLeft = _particles[id.x].position - boxSize / 2;
 
@@ -63,7 +65,7 @@ void Integrate (uint3 id: SV_DISPATCHTHREADID) {
     }
 
     // Maximum boundary.
-    if (_particles[id.x].position.x + radius > topRight.x) {
+    if (_particles[id.x].position.x + radius + 2 > topRight.x) {
         updatedVelocity.x *= boundDamping;
         _particles[id.x].position.x = topRight.x - radius;
     }
