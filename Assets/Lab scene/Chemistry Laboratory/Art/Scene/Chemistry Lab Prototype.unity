@@ -1160,23 +1160,23 @@ MonoBehaviour:
   collisionSphere: {fileID: 1047373673}
   showSpheres: 1
   numToSpawn: {x: 10, y: 10, z: 10}
-  boxSize: {x: 0.08, y: 0.1, z: 0.08}
+  boxSize: {x: 0.08, y: 0.15, z: 0.08}
   spawnCenter: {x: -0.9, y: -0.7073, z: -0.2}
   particleRadius: 0.01
-  spawnJitter: 0.03
+  spawnJitter: 0.001
   gizmoSphereRadius: 0.005
   particleMesh: {fileID: 2540817853737639666, guid: d2bcb9b63a067d643b56910fd449b51b,
     type: 3}
-  particleRenderSize: 0.25
+  particleRenderSize: 0.1
   material: {fileID: 2100000, guid: 46f4b02bb10bc4f59a4108bfca3f5612, type: 2}
   shader: {fileID: 7200000, guid: c5fbb7e9e7da549e887bc21ea8e06f34, type: 3}
   particles: []
   boundDamping: -0.3
   viscosity: -0.003
   particleMass: 1
-  gasConstant: 2
-  restingDensity: 1
-  timestep: 0.001
+  gasConstant: 0.002
+  restingDensity: 0.1
+  timestep: 0.0005
 --- !u!1001 &517006737
 PrefabInstance:
   m_ObjectHideFlags: 0
