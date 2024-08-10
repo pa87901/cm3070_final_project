@@ -176,7 +176,7 @@ PrefabInstance:
     - target: {fileID: 1044230619016210068, guid: 1836ec5a4a9706d42b8941d84940196f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.9
       objectReference: {fileID: 0}
     - target: {fileID: 1044230619016210068, guid: 1836ec5a4a9706d42b8941d84940196f,
         type: 3}
@@ -186,7 +186,7 @@ PrefabInstance:
     - target: {fileID: 1044230619016210068, guid: 1836ec5a4a9706d42b8941d84940196f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.203
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 1044230619016210068, guid: 1836ec5a4a9706d42b8941d84940196f,
         type: 3}
@@ -1160,11 +1160,11 @@ MonoBehaviour:
   collisionSphere: {fileID: 1047373673}
   showSpheres: 1
   numToSpawn: {x: 10, y: 10, z: 10}
-  boxSize: {x: 0.5, y: 1, z: 0.5}
-  spawnCenter: {x: 0.13, y: 8.79, z: -0.33}
+  boxSize: {x: 0.08, y: 0.1, z: 0.08}
+  spawnCenter: {x: -0.9, y: -0.7073, z: -0.2}
   particleRadius: 0.01
   spawnJitter: 0.03
-  gizmoSphereRadius: 0.05
+  gizmoSphereRadius: 0.005
   particleMesh: {fileID: 2540817853737639666, guid: d2bcb9b63a067d643b56910fd449b51b,
     type: 3}
   particleRenderSize: 0.25
@@ -3196,17 +3196,17 @@ PrefabInstance:
     - target: {fileID: 6555366191670972142, guid: 334977a5bb7cd43988a44c946bddc4fa,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.0029999986
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6555366191670972142, guid: 334977a5bb7cd43988a44c946bddc4fa,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.24
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6555366191670972142, guid: 334977a5bb7cd43988a44c946bddc4fa,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.13
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6555366191670972142, guid: 334977a5bb7cd43988a44c946bddc4fa,
         type: 3}

@@ -29,8 +29,8 @@ public class SPH : MonoBehaviour
             return numToSpawn.x * numToSpawn.y * numToSpawn.z;
         }
     }
-    public Vector3 boxSize = new Vector3(0.5f, 1f, 0.5f); // Size of the container for the particles to be bound within.
-    public Vector3 spawnCenter; // The starting point where the particles will spawn from.
+    public Vector3 boxSize = new Vector3(0.5f, 0.25f, 0.5f); // Size of the container for the particles to be bound within.
+    public Vector3 spawnCenter = new Vector3(0, 0, 0); // The starting point where the particles will spawn from.
     public float particleRadius = 0.01f;
     public float spawnJitter = 0.03f;
     public float gizmoSphereRadius = 0.05f;
@@ -132,8 +132,12 @@ public class SPH : MonoBehaviour
     // Method for spawning the particles.
     private void SpawnParticlesInBox() {
         // Vector3 spawnPoint  = spawnCenter;
-        Vector3 spawnPoint = transform.position + new Vector3(0, 0, 0);
-        // Debug.Log(transform.position.y);
+        // Vector3 spawnPoint = transform.position + new Vector3(0, 0, 0);
+        Vector3 newPos = transform.position;
+        newPos.y += 0.05f;
+        newPos.x += 1f;
+        Vector3 spawnPoint = newPos;
+        Debug.Log(spawnPoint);
         List<Particle> _particles = new List<Particle>();
 
         // Spawn particles in a grid structure.
@@ -141,7 +145,7 @@ public class SPH : MonoBehaviour
             for (int y = 0; y < numToSpawn.y; y++) {
                 for (int z = 0; z < numToSpawn.z; z++) {
                     Vector3 spawnPos = spawnPoint + new Vector3(
-                        x * particleRadius * 2,
+                        (x * particleRadius * 2) - 1,
                         y * particleRadius * 2,
                         z * particleRadius * 2
                     );
@@ -154,8 +158,8 @@ public class SPH : MonoBehaviour
                 }
             }
         }
-        Debug.Log(new Vector3(0, 0, 0));
-        Debug.Log(boxSize / 2);
+        // Debug.Log(new Vector3(0, 0, 0));
+        // Debug.Log(boxSize / 2);
 
         particles = _particles.ToArray();
     }
@@ -163,9 +167,13 @@ public class SPH : MonoBehaviour
     // Native method. Define the box for the SPH simulator that will bound the spawned particles and fluid.
     private void OnDrawGizmos() {
         Gizmos.color = Color.cyan;
+        // Position the SPH simulator box to the parent beaker.
+        Vector3 newPos = transform.position;
+        newPos.y += 0.05f;
         Gizmos.DrawWireCube(
             // Vector3.zero,
-            transform.position,
+            // transform.position,
+            newPos,
             boxSize
             );
 

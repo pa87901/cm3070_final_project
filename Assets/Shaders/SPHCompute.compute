@@ -42,7 +42,7 @@ void Integrate (uint3 id: SV_DISPATCHTHREADID) {
 
     // Keep the particles in the confines of the simulator container.
     // When particles hit the boundary, the velocity is updated to send it back inside the container wall.
-    float3 addition = float3(0, 1.5, 0);
+    float3 addition = float3(-1.0f, 1.35f, -0.14f);
     float3 topRight = (boxSize / 2) + addition;
     float3 bottomLeft = -(boxSize / 2) + addition;
     // float3 topRight = _particles[id.x].position;
