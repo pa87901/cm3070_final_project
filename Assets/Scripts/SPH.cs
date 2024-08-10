@@ -29,16 +29,16 @@ public class SPH : MonoBehaviour
             return numToSpawn.x * numToSpawn.y * numToSpawn.z;
         }
     }
-    public Vector3 boxSize = new Vector3(4, 10, 3); // Size of the container for the particles to be bound within.
+    public Vector3 boxSize = new Vector3(0.5f, 1f, 0.5f); // Size of the container for the particles to be bound within.
     public Vector3 spawnCenter; // The starting point where the particles will spawn from.
     public float particleRadius = 0.01f;
-    public float spawnJitter = 0.2f;
+    public float spawnJitter = 0.03f;
     public float gizmoSphereRadius = 0.05f;
 
     // These are specifically for rendering the GPU instance spheres.
     [Header("Particle Rendering")]
     public Mesh particleMesh;
-    public float particleRenderSize = 8f;
+    public float particleRenderSize = 0.25f;
     public Material material;
 
     [Header("Compute")]
@@ -154,6 +154,7 @@ public class SPH : MonoBehaviour
                 }
             }
         }
+        Debug.Log(new Vector3(0, 0, 0));
         Debug.Log(boxSize / 2);
 
         particles = _particles.ToArray();

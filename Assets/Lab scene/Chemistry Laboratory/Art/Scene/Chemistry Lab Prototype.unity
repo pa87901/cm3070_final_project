@@ -1162,12 +1162,12 @@ MonoBehaviour:
   numToSpawn: {x: 10, y: 10, z: 10}
   boxSize: {x: 0.5, y: 1, z: 0.5}
   spawnCenter: {x: 0.13, y: 8.79, z: -0.33}
-  particleRadius: 0.03
+  particleRadius: 0.01
   spawnJitter: 0.03
   gizmoSphereRadius: 0.05
   particleMesh: {fileID: 2540817853737639666, guid: d2bcb9b63a067d643b56910fd449b51b,
     type: 3}
-  particleRenderSize: 0.5
+  particleRenderSize: 0.25
   material: {fileID: 2100000, guid: 46f4b02bb10bc4f59a4108bfca3f5612, type: 2}
   shader: {fileID: 7200000, guid: c5fbb7e9e7da549e887bc21ea8e06f34, type: 3}
   particles: []
@@ -5352,7 +5352,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!215 &2041942842
 ReflectionProbe:
