@@ -246,6 +246,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 110363079}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &119760272 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5686134208185362930, guid: 1fd3a7c43c8190f4d8c167ebde694364,
+    type: 3}
+  m_PrefabInstance: {fileID: 832965867}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &184325916
 GameObject:
   m_ObjectHideFlags: 0
@@ -2190,6 +2196,51 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 832965867}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &832965869 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5686134208192617028, guid: 1fd3a7c43c8190f4d8c167ebde694364,
+    type: 3}
+  m_PrefabInstance: {fileID: 832965867}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &832965870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119760272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e16a3cd2beb441b492f97a66643dbf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pinchAnimationAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Pinch Animation
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: a12976c7-8ae8-4b73-9226-480c5f9b05f5
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
+  gripAnimationAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Grip Animation
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: a29bd1a3-4983-4575-88f1-6eef7d1d18e1
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -1758520528963094988, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
+  handAnimator: {fileID: 832965869}
 --- !u!1 &853954309
 GameObject:
   m_ObjectHideFlags: 0
