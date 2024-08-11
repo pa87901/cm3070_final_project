@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Lab scenery/Chemistry Laboratory/Art/Scene/Chemistry Lab Prototype.unity
     guid: a496be956a8a845bb9e9d7284f5626dc
-  - enabled: 1
+  - enabled: 0
     path: Assets/Lab scene/Chemistry Laboratory/Art/Scene/Chemistry Lab Prototype.unity
     guid: ab72ce8ab8c4e45639908d4455ab83d3
   m_configObjects:
