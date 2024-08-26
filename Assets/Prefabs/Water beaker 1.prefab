@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateMode: 0
-  MaxWobble: 0.03
+  MaxWobble: 0.006
   WobbleSpeedMove: 1
   fillAmount: 0.5
   Recovery: 1
