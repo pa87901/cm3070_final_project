@@ -96,9 +96,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5000001
-  m_Height: 1.309887
+  m_Height: 2.233863
   m_Direction: 1
-  m_Center: {x: 0.000000043826944, y: -0.39682552, z: -0.00000008765389}
+  m_Center: {x: 0.000000048696606, y: -0.07409773, z: -0.00000009739321}
 --- !u!114 &8002941547431894167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateMode: 0
-  MaxWobble: 0.001
+  MaxWobble: 0.005
   WobbleSpeedMove: 1
   fillAmount: 0.5
   Recovery: 1
@@ -256,7 +256,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 2
+    m_Bits: 16
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_FocusMode: 1
