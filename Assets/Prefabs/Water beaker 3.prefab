@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8196512354126052651
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 463335899898515310, guid: 56a0e2f2eb78a4e9a863ce16647770c9,
+        type: 3}
+      propertyPath: m_Name
+      value: Water beaker 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 463335900121815062, guid: 56a0e2f2eb78a4e9a863ce16647770c9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463335900609817912, guid: 56a0e2f2eb78a4e9a863ce16647770c9,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 978b9d07e21894eb7aa471fabae6aea7, type: 2}
+    - target: {fileID: 2834423923150817824, guid: 56a0e2f2eb78a4e9a863ce16647770c9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834423923150817824, guid: 56a0e2f2eb78a4e9a863ce16647770c9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.088
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834423923150817824, guid: 56a0e2f2eb78a4e9a863ce16647770c9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.08498621
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834423923150817824, guid: 56a0e2f2eb78a4e9a863ce16647770c9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.8260121
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834423923150817824, guid: 56a0e2f2eb78a4e9a863ce16647770c9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834423923150817824, guid: 56a0e2f2eb78a4e9a863ce16647770c9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834423923150817824, guid: 56a0e2f2eb78a4e9a863ce16647770c9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834423923150817824, guid: 56a0e2f2eb78a4e9a863ce16647770c9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834423923150817824, guid: 56a0e2f2eb78a4e9a863ce16647770c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834423923150817824, guid: 56a0e2f2eb78a4e9a863ce16647770c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2834423923150817824, guid: 56a0e2f2eb78a4e9a863ce16647770c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3179036828337852570, guid: 56a0e2f2eb78a4e9a863ce16647770c9,
+        type: 3}
+      propertyPath: m_Name
+      value: Water beaker 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4941501141106527511, guid: 56a0e2f2eb78a4e9a863ce16647770c9,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 978b9d07e21894eb7aa471fabae6aea7, type: 2}
+    - target: {fileID: 6613122909488640029, guid: 56a0e2f2eb78a4e9a863ce16647770c9,
+        type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 16
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8424218436296018512, guid: 56a0e2f2eb78a4e9a863ce16647770c9, type: 3}
+    - {fileID: 463335900609817919, guid: 56a0e2f2eb78a4e9a863ce16647770c9, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 56a0e2f2eb78a4e9a863ce16647770c9, type: 3}
+--- !u!23 &8633898585227792403 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 463335900609817912, guid: 56a0e2f2eb78a4e9a863ce16647770c9,
+    type: 3}
+  m_PrefabInstance: {fileID: 8196512354126052651}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8633898585227792406 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 463335900609817917, guid: 56a0e2f2eb78a4e9a863ce16647770c9,
+    type: 3}
+  m_PrefabInstance: {fileID: 8196512354126052651}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7617952234098902974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8633898585227792406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fb972b379f7c422396e198b1c59a483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateMode: 0
+  MaxWobble: 0.006
+  WobbleSpeedMove: 1
+  fillAmount: 0.5
+  Recovery: 1
+  Thickness: 1
+  CompensateShapeAmount: 0
+  mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+  rend: {fileID: 8633898585227792403}
