@@ -1,18 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-6735589744598231798
-MonoBehaviour:
-  m_ObjectHideFlags: 11
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 5
 --- !u!21 &2100000
 Material:
   serializedVersion: 8
@@ -20,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PhenolpthaleinShader
-  m_Shader: {fileID: -6465566751694194690, guid: 5d144e0fe49c741399ca7097f4375c58,
+  m_Name: VinegarShader
+  m_Shader: {fileID: -6465566751694194690, guid: 2dc91e476ef1f4d09926fc0a94740546,
     type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -52,8 +39,21 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _WobbleX: -0
-    - _WobbleZ: 0
+    - _WobbleZ: -0
     m_Colors:
-    - _SideColor: {r: 0.39215687, g: 0, b: 0.5882353, a: 0}
-    - _TopColor: {r: 0.78431374, g: 0, b: 1, a: 0}
+    - _SideColor: {r: 0.627451, g: 0.50980395, b: 0.39215687, a: 0}
+    - _TopColor: {r: 0.9019608, g: 0.78431374, b: 0.627451, a: 1}
   m_BuildTextureStacks: []
+--- !u!114 &6098841362595712135
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5
