@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: VinegarShader
-  m_Shader: {fileID: -6465566751694194690, guid: 2dc91e476ef1f4d09926fc0a94740546,
+  m_Name: SodiumCarbonateShader
+  m_Shader: {fileID: -6465566751694194690, guid: e70090f9659044056844ff522a0b761a,
     type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -41,10 +41,10 @@ Material:
     - _WobbleX: 0
     - _WobbleZ: 0
     m_Colors:
-    - _SideColor: {r: 0.627451, g: 0.50980395, b: 0.39215687, a: 0}
-    - _TopColor: {r: 0.9019608, g: 0.78431374, b: 0.627451, a: 1}
+    - _SideColor: {r: 0.5882353, g: 0.78431374, b: 0.5882353, a: 0.3921569}
+    - _TopColor: {r: 0.7058824, g: 1, b: 0.8627451, a: 0.3921569}
   m_BuildTextureStacks: []
---- !u!114 &6098841362595712135
+--- !u!114 &7484202625289523685
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
