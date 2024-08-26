@@ -48,10 +48,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Fill: 0.35
+    - _Fill: 0.53
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _WobbleX: 0
+    - _WobbleX: -0
     - _WobbleZ: 0
     m_Colors:
     - _SideColor: {r: 0.39215687, g: 0, b: 0.5882353, a: 0}
