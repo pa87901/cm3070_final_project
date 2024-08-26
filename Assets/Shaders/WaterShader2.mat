@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-6735589744598231798
+--- !u!114 &-9088027572690996004
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: LiquidShader
-  m_Shader: {fileID: -6465566751694194690, guid: 5d144e0fe49c741399ca7097f4375c58,
+  m_Name: WaterShader2
+  m_Shader: {fileID: -6465566751694194690, guid: 15c1705477f2d4fc6963a4976cd6b8de,
     type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
