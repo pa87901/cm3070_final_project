@@ -782,6 +782,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Phenolphthalein test tube
       objectReference: {fileID: 0}
+    - target: {fileID: 8860634836825771453, guid: a927b8bd21ed249bcba0db2624bbafdb,
+        type: 3}
+      propertyPath: MaxWobble
+      value: 0.006
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a927b8bd21ed249bcba0db2624bbafdb, type: 3}
 --- !u!4 &174100649 stripped
