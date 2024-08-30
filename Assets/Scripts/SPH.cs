@@ -211,6 +211,6 @@ public class SPH : MonoBehaviour
             );
         }
 
-        Debug.Log(particles[1].position.y);
+        // Debug.Log(particles[1].velocity);
     }
 }
