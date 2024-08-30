@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-5521321962341460712
+--- !u!114 &-6735589744598231798
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WaterShader1
-  m_Shader: {fileID: -6465566751694194690, guid: 15c1705477f2d4fc6963a4976cd6b8de,
+  m_Name: PhenolpthaleinShader
+  m_Shader: {fileID: -6465566751694194690, guid: 5d144e0fe49c741399ca7097f4375c58,
     type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -48,12 +48,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Fill: 0.52
+    - _Fill: 0.53
     - _QueueControl: 0
     - _QueueOffset: 0
     - _WobbleX: 0
     - _WobbleZ: 0
     m_Colors:
-    - _SideColor: {r: 0, g: 0.39215687, b: 1, a: 0}
-    - _TopColor: {r: 0, g: 0.5882353, b: 1, a: 0}
+    - _SideColor: {r: 0.39215687, g: 0, b: 0.5882353, a: 0}
+    - _TopColor: {r: 0.78431374, g: 0, b: 1, a: 0}
   m_BuildTextureStacks: []
