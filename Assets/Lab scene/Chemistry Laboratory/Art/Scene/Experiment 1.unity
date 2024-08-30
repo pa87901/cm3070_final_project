@@ -499,7 +499,7 @@ PrefabInstance:
     - target: {fileID: 1044230619016210068, guid: 1836ec5a4a9706d42b8941d84940196f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.6700001
+      value: -0.685
       objectReference: {fileID: 0}
     - target: {fileID: 1044230619016210068, guid: 1836ec5a4a9706d42b8941d84940196f,
         type: 3}
@@ -2304,8 +2304,8 @@ MonoBehaviour:
   gizmoSphereRadius: 0.005
   particleMesh: {fileID: 2540817853737639666, guid: d2bcb9b63a067d643b56910fd449b51b,
     type: 3}
-  particleRenderSize: 0.1
-  material: {fileID: 2100000, guid: 71e0159131ea44bc9a0c8c9a832863da, type: 2}
+  particleRenderSize: 0.5
+  material: {fileID: 2100000, guid: 46f4b02bb10bc4f59a4108bfca3f5612, type: 2}
   shader: {fileID: 7200000, guid: c5fbb7e9e7da549e887bc21ea8e06f34, type: 3}
   particles: []
   boundDamping: -0.3
