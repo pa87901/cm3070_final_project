@@ -2299,12 +2299,12 @@ MonoBehaviour:
   numToSpawn: {x: 10, y: 10, z: 10}
   boxSize: {x: 0.08, y: 0.13, z: 0.08}
   spawnCenter: {x: -0.9, y: -0.7073, z: -0.2}
-  particleRadius: 0.01
+  particleRadius: 0.002
   spawnJitter: 0.001
   gizmoSphereRadius: 0.005
   particleMesh: {fileID: 2540817853737639666, guid: d2bcb9b63a067d643b56910fd449b51b,
     type: 3}
-  particleRenderSize: 0.5
+  particleRenderSize: 0.1
   material: {fileID: 2100000, guid: 46f4b02bb10bc4f59a4108bfca3f5612, type: 2}
   shader: {fileID: 7200000, guid: c5fbb7e9e7da549e887bc21ea8e06f34, type: 3}
   particles: []
@@ -5934,7 +5934,7 @@ MonoBehaviour:
   gizmoSphereRadius: 0.005
   particleMesh: {fileID: 2540817853737639666, guid: d2bcb9b63a067d643b56910fd449b51b,
     type: 3}
-  particleRenderSize: 0.01
+  particleRenderSize: 0.1
   material: {fileID: 2100000, guid: 46f4b02bb10bc4f59a4108bfca3f5612, type: 2}
   shader: {fileID: 7200000, guid: c5fbb7e9e7da549e887bc21ea8e06f34, type: 3}
   particles: []
@@ -11166,6 +11166,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SPH Simulator
+      objectReference: {fileID: 0}
+    - target: {fileID: 6555366191670972136, guid: 334977a5bb7cd43988a44c946bddc4fa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6555366191670972142, guid: 334977a5bb7cd43988a44c946bddc4fa,
         type: 3}
