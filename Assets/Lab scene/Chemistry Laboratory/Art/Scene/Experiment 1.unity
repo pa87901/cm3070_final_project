@@ -2308,12 +2308,12 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 46f4b02bb10bc4f59a4108bfca3f5612, type: 2}
   shader: {fileID: 7200000, guid: c5fbb7e9e7da549e887bc21ea8e06f34, type: 3}
   particles: []
-  boundDamping: -0.3
+  boundDamping: -0.01
   viscosity: -0.003
-  particleMass: 1
+  particleMass: 0.5
   gasConstant: 0.002
   restingDensity: 0.1
-  timestep: 0.00008
+  timestep: 0.00006
 --- !u!1 &404650346 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5357238664930371632, guid: 35a0ff405c028a84ea19cdd98c893fd9,
