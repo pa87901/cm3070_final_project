@@ -2313,7 +2313,7 @@ MonoBehaviour:
   particleMass: 1
   gasConstant: 0.002
   restingDensity: 0.1
-  timestep: 0.0005
+  timestep: 0.00008
 --- !u!1 &404650346 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5357238664930371632, guid: 35a0ff405c028a84ea19cdd98c893fd9,
