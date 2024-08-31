@@ -2299,21 +2299,21 @@ MonoBehaviour:
   numToSpawn: {x: 10, y: 10, z: 10}
   boxSize: {x: 0.08, y: 0.13, z: 0.08}
   spawnCenter: {x: -0.9, y: -0.7073, z: -0.2}
-  particleRadius: 0.002
+  particleRadius: 0.01
   spawnJitter: 0.001
   gizmoSphereRadius: 0.005
   particleMesh: {fileID: 2540817853737639666, guid: d2bcb9b63a067d643b56910fd449b51b,
     type: 3}
-  particleRenderSize: 0.05
+  particleRenderSize: 0.1
   material: {fileID: 2100000, guid: 46f4b02bb10bc4f59a4108bfca3f5612, type: 2}
   shader: {fileID: 7200000, guid: c5fbb7e9e7da549e887bc21ea8e06f34, type: 3}
   particles: []
-  boundDamping: 0.03
-  viscosity: 0.01
-  particleMass: 0.5
-  gasConstant: 0.04
-  restingDensity: 0.02
-  timestep: 0.00006
+  boundDamping: -0.3
+  viscosity: -0.003
+  particleMass: 1
+  gasConstant: 0.002
+  restingDensity: 0.1
+  timestep: 0.0005
 --- !u!1 &404650346 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5357238664930371632, guid: 35a0ff405c028a84ea19cdd98c893fd9,
@@ -8794,7 +8794,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1721495770
 Transform:
   m_ObjectHideFlags: 0
