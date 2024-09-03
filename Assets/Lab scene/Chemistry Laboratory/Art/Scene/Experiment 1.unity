@@ -2298,7 +2298,7 @@ MonoBehaviour:
   showSpheres: 1
   numToSpawn: {x: 10, y: 10, z: 10}
   boxSize: {x: 0.08, y: 0.3, z: 0.08}
-  spawnCenter: {x: -0.472, y: 0, z: -0.812}
+  spawnCenter: {x: -0.472, y: 2, z: -0.812}
   particleRadius: 0.01
   spawnJitter: 0.001
   gizmoSphereRadius: 0.005
