@@ -32,6 +32,9 @@ float3 boxSize;
 float3 spherePos;
 float sphereRadius;
 
+float3 additionTop;
+float3 additionBottom;
+
 [numthreads(100,1,1)] // Thread groups. In short, this means calling the Integrate function once for every particle.
 void Integrate (uint3 id: SV_DISPATCHTHREADID) {
     // _particles[id.x].currentForce = float3(0, (-9.81 * particleMass), 0); // Gravity before other forces for testing only. Leave commented out.
@@ -42,9 +45,10 @@ void Integrate (uint3 id: SV_DISPATCHTHREADID) {
 
     // Keep the particles in the confines of the simulator container.
     // When particles hit the boundary, the velocity is updated to send it back inside the container wall.
-    float3 addition = float3(-0.397f, 1.5f, -0.812f);
-    float3 topRight = (boxSize / 2) + addition;
-    float3 bottomLeft = -(boxSize / 2) + float3(-0.397f, 1.45f, -0.812f);
+    // float3 addition = float3(-0.397f, 1.5f, -0.812f);
+    float3 topRight = (boxSize / 2) + additionTop;
+    float3 bottomLeft = -(boxSize / 2) + additionBottom;
+    // float3(-0.397f, 1.45f, -0.812f);
     // float3 topRight = _particles[id.x].position;
     // float3 bottomLeft = _particles[id.x].position - boxSize / 2;
 
