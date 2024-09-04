@@ -2297,8 +2297,8 @@ MonoBehaviour:
   collisionSphere: {fileID: 1047373673}
   showSpheres: 1
   numToSpawn: {x: 10, y: 10, z: 10}
-  boxSize: {x: 0.08, y: 0.13, z: 0.08}
-  spawnCenter: {x: -0.9, y: -0.7073, z: -0.2}
+  boxSize: {x: 0.08, y: 0.3, z: 0.08}
+  spawnCenter: {x: -0.472, y: 2, z: -0.812}
   particleRadius: 0.01
   spawnJitter: 0.001
   gizmoSphereRadius: 0.005
@@ -3251,7 +3251,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 664670907}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
@@ -3540,9 +3540,8 @@ GameObject:
   - component: {fileID: 694839789}
   - component: {fileID: 694839792}
   - component: {fileID: 694839791}
-  - component: {fileID: 694839790}
   - component: {fileID: 694839793}
-  - component: {fileID: 694839794}
+  - component: {fileID: 694839790}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3711,7 +3710,7 @@ Camera:
   field of view: 60
   orthographic: 0
   orthographic size: 5
-  m_Depth: 0
+  m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -3741,23 +3740,11 @@ MonoBehaviour:
   raymarching: {fileID: 7200000, guid: f7ddad8324e50484389c178d140a5623, type: 3}
   cam: {fileID: 694839792}
   sph: {fileID: 403798566}
-  viewRadius: 0.000125
-  blendStrength: 0.005
+  viewRadius: 0.01
+  blendStrength: 0.5
   waterColor: {r: 0.39215687, g: 0.5882353, b: 0.39215687, a: 0}
   ambientLight: {r: 0.39215687, g: 0.5882353, b: 0.39215687, a: 0}
-  lightSource: {fileID: 664670909}
---- !u!114 &694839794
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 694839788}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  lightSource: {fileID: 1454730012}
 --- !u!1 &697763079
 GameObject:
   m_ObjectHideFlags: 0
@@ -3784,7 +3771,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 697763079}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Script: {fileID: 0}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &697763081
@@ -7121,7 +7108,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 110363080}
+    m_TransformParent: {fileID: 2144305298}
     m_Modifications:
     - target: {fileID: 6101870537026299490, guid: 334977a5bb7cd43988a44c946bddc4fa,
         type: 3}
@@ -7186,7 +7173,7 @@ PrefabInstance:
     - target: {fileID: 6555366191670972142, guid: 334977a5bb7cd43988a44c946bddc4fa,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6555366191670972142, guid: 334977a5bb7cd43988a44c946bddc4fa,
         type: 3}
@@ -7211,7 +7198,7 @@ PrefabInstance:
     - target: {fileID: 6555366191670972142, guid: 334977a5bb7cd43988a44c946bddc4fa,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.102
       objectReference: {fileID: 0}
     - target: {fileID: 6555366191670972142, guid: 334977a5bb7cd43988a44c946bddc4fa,
         type: 3}
@@ -7830,7 +7817,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1454730010}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Script: {fileID: 0}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1474439558 stripped
