@@ -127,9 +127,6 @@ public class SPH : MonoBehaviour
         shader.SetFloat("sphereRadius", collisionSphere.transform.localScale.x / 2);
         shader.SetVector("additionTop", additionTop);
         shader.SetVector("additionBottom", additionBottom);
-        // shader.SetFloat("addX", addX);
-        // shader.SetFloat("addY", addY);
-        // shader.SetFloat("addZ", addZ);
 
         
         // Total Particles has to be divisible by 100, because we are using 100 threads in the SPHCompute.compute shader script to ensure the function runs once per particle.
