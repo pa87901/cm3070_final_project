@@ -75,6 +75,7 @@ public class FluidRayMarching : MonoBehaviour
         }
 
         if (render) {
+            raymarching.SetTextureFromGlobal(0, "_DepthTexture", "_CameraDepthTexture");
 
             raymarching.SetVector ("_Light", lightSource.transform.forward);
 
@@ -86,6 +87,7 @@ public class FluidRayMarching : MonoBehaviour
 
             int threadGroupsX = Mathf.CeilToInt (cam.pixelWidth / 8.0f);
             int threadGroupsY = Mathf.CeilToInt (cam.pixelHeight / 8.0f);
+
             raymarching.Dispatch (0, threadGroupsX, threadGroupsY, 1);
 
             Graphics.Blit (target, destination);
