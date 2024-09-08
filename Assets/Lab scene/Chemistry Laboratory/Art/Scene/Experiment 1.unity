@@ -3721,7 +3721,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 694839788}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3366f1ec358c646c08e1c3b2187c1d2b, type: 3}
   m_Name: 
@@ -5889,46 +5889,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 378601970}
     m_Modifications:
-    - target: {fileID: 6101870537026299490, guid: 563cae960d6b24df69f0838de1636ae7,
-        type: 3}
-      propertyPath: timestep
-      value: 0.001
-      objectReference: {fileID: 0}
-    - target: {fileID: 6101870537026299490, guid: 563cae960d6b24df69f0838de1636ae7,
-        type: 3}
-      propertyPath: additionTop.x
-      value: -0.397
-      objectReference: {fileID: 0}
-    - target: {fileID: 6101870537026299490, guid: 563cae960d6b24df69f0838de1636ae7,
-        type: 3}
-      propertyPath: additionTop.z
-      value: -0.812
-      objectReference: {fileID: 0}
-    - target: {fileID: 6101870537026299490, guid: 563cae960d6b24df69f0838de1636ae7,
-        type: 3}
-      propertyPath: spawnCenter.x
-      value: -0.167
-      objectReference: {fileID: 0}
-    - target: {fileID: 6101870537026299490, guid: 563cae960d6b24df69f0838de1636ae7,
-        type: 3}
-      propertyPath: spawnCenter.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6101870537026299490, guid: 563cae960d6b24df69f0838de1636ae7,
-        type: 3}
-      propertyPath: spawnCenter.z
-      value: -0.812
-      objectReference: {fileID: 0}
-    - target: {fileID: 6101870537026299490, guid: 563cae960d6b24df69f0838de1636ae7,
-        type: 3}
-      propertyPath: additionBottom.x
-      value: -0.397
-      objectReference: {fileID: 0}
-    - target: {fileID: 6101870537026299490, guid: 563cae960d6b24df69f0838de1636ae7,
-        type: 3}
-      propertyPath: additionBottom.z
-      value: -0.812
-      objectReference: {fileID: 0}
     - target: {fileID: 6555366191670972136, guid: 563cae960d6b24df69f0838de1636ae7,
         type: 3}
       propertyPath: m_Name
@@ -5988,6 +5948,62 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410547889356682839, guid: 563cae960d6b24df69f0838de1636ae7,
+        type: 3}
+      propertyPath: shader
+      value: 
+      objectReference: {fileID: 7200000, guid: 53d3e588b95764eab89401b736f7ab72, type: 3}
+    - target: {fileID: 7410547889356682839, guid: 563cae960d6b24df69f0838de1636ae7,
+        type: 3}
+      propertyPath: material
+      value: 
+      objectReference: {fileID: 2100000, guid: 46f4b02bb10bc4f59a4108bfca3f5612, type: 2}
+    - target: {fileID: 7410547889356682839, guid: 563cae960d6b24df69f0838de1636ae7,
+        type: 3}
+      propertyPath: timestep
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410547889356682839, guid: 563cae960d6b24df69f0838de1636ae7,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410547889356682839, guid: 563cae960d6b24df69f0838de1636ae7,
+        type: 3}
+      propertyPath: particleMesh
+      value: 
+      objectReference: {fileID: 2540817853737639666, guid: d2bcb9b63a067d643b56910fd449b51b,
+        type: 3}
+    - target: {fileID: 7410547889356682839, guid: 563cae960d6b24df69f0838de1636ae7,
+        type: 3}
+      propertyPath: additionTop.x
+      value: -0.097
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410547889356682839, guid: 563cae960d6b24df69f0838de1636ae7,
+        type: 3}
+      propertyPath: spawnCenter.x
+      value: -0.172
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410547889356682839, guid: 563cae960d6b24df69f0838de1636ae7,
+        type: 3}
+      propertyPath: spawnCenter.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410547889356682839, guid: 563cae960d6b24df69f0838de1636ae7,
+        type: 3}
+      propertyPath: spawnCenter.z
+      value: -0.812
+      objectReference: {fileID: 0}
+    - target: {fileID: 7410547889356682839, guid: 563cae960d6b24df69f0838de1636ae7,
+        type: 3}
+      propertyPath: collisionSphere
+      value: 
+      objectReference: {fileID: 1047373673}
+    - target: {fileID: 7410547889356682839, guid: 563cae960d6b24df69f0838de1636ae7,
+        type: 3}
+      propertyPath: additionBottom.x
+      value: -0.097
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 563cae960d6b24df69f0838de1636ae7, type: 3}
@@ -7208,56 +7224,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2144305298}
     m_Modifications:
-    - target: {fileID: 6101870537026299490, guid: 334977a5bb7cd43988a44c946bddc4fa,
-        type: 3}
-      propertyPath: sphere
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6101870537026299490, guid: 334977a5bb7cd43988a44c946bddc4fa,
-        type: 3}
-      propertyPath: material
-      value: 
-      objectReference: {fileID: 2100000, guid: 59f711850adb03c4e8c278abd3f506ca, type: 2}
-    - target: {fileID: 6101870537026299490, guid: 334977a5bb7cd43988a44c946bddc4fa,
-        type: 3}
-      propertyPath: timestep
-      value: 0.0001
-      objectReference: {fileID: 0}
-    - target: {fileID: 6101870537026299490, guid: 334977a5bb7cd43988a44c946bddc4fa,
-        type: 3}
-      propertyPath: boxSize.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6101870537026299490, guid: 334977a5bb7cd43988a44c946bddc4fa,
-        type: 3}
-      propertyPath: boxSize.y
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6101870537026299490, guid: 334977a5bb7cd43988a44c946bddc4fa,
-        type: 3}
-      propertyPath: boxSize.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6101870537026299490, guid: 334977a5bb7cd43988a44c946bddc4fa,
-        type: 3}
-      propertyPath: spawnBox.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6101870537026299490, guid: 334977a5bb7cd43988a44c946bddc4fa,
-        type: 3}
-      propertyPath: spawnBox.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6101870537026299490, guid: 334977a5bb7cd43988a44c946bddc4fa,
-        type: 3}
-      propertyPath: spawnBoxCenter.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6101870537026299490, guid: 334977a5bb7cd43988a44c946bddc4fa,
-        type: 3}
-      propertyPath: particleRenderSize
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 6555366191670972136, guid: 334977a5bb7cd43988a44c946bddc4fa,
         type: 3}
       propertyPath: m_Name
@@ -7359,8 +7325,7 @@ PrefabInstance:
       propertyPath: spawnCenter.y
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6101870537026299490, guid: 334977a5bb7cd43988a44c946bddc4fa, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 334977a5bb7cd43988a44c946bddc4fa, type: 3}
 --- !u!1 &1397479992
 GameObject:
@@ -11746,10 +11711,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8196512353991278032}
     m_Modifications:
+    - target: {fileID: 6101870537026299490, guid: 51da885acb91048efbc97b64a897afd6,
+        type: 3}
+      propertyPath: material
+      value: 
+      objectReference: {fileID: 2100000, guid: 46f4b02bb10bc4f59a4108bfca3f5612, type: 2}
+    - target: {fileID: 6101870537026299490, guid: 51da885acb91048efbc97b64a897afd6,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6101870537026299490, guid: 51da885acb91048efbc97b64a897afd6,
+        type: 3}
+      propertyPath: collisionSphere
+      value: 
+      objectReference: {fileID: 1047373673}
     - target: {fileID: 6555366191670972136, guid: 51da885acb91048efbc97b64a897afd6,
         type: 3}
       propertyPath: m_Name
       value: SPH Simulator
+      objectReference: {fileID: 0}
+    - target: {fileID: 6555366191670972136, guid: 51da885acb91048efbc97b64a897afd6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6555366191670972142, guid: 51da885acb91048efbc97b64a897afd6,
         type: 3}
@@ -12426,6 +12411,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Water beaker 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3179036828337852570, guid: a22017f5df7b64850a6e8881da9da322,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3971833295919509839, guid: a22017f5df7b64850a6e8881da9da322,
         type: 3}

@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6555366191670972142}
-  - component: {fileID: 6101870537026299490}
   m_Layer: 0
   m_Name: SPH Simulator
   m_TagString: Untagged
@@ -32,35 +31,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6101870537026299490
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6555366191670972136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a789ca5f620a84b67ba56dd816828c17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collisionSphere: {fileID: 0}
-  showSpheres: 1
-  numToSpawn: {x: 10, y: 10, z: 10}
-  boxSize: {x: 0.08, y: 0.15, z: 0.08}
-  spawnCenter: {x: -0.9, y: -0.7073, z: -0.2}
-  particleRadius: 0.01
-  spawnJitter: 0.001
-  gizmoSphereRadius: 0.005
-  particleMesh: {fileID: 2540817853737639666, guid: d2bcb9b63a067d643b56910fd449b51b,
-    type: 3}
-  particleRenderSize: 0.1
-  material: {fileID: 2100000, guid: 74791b8a0f2f148f5a66a325ee3f9146, type: 2}
-  shader: {fileID: 0}
-  particles: []
-  boundDamping: -0.3
-  viscosity: -0.003
-  particleMass: 1
-  gasConstant: 0.002
-  restingDensity: 0.1
-  timestep: 0.0005
